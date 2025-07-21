@@ -1,3 +1,8 @@
+# networksecurity/components/data_ingestion.py
+"""This module handles the data ingestion process for the Network Security project.
+It connects to a MongoDB database, retrieves data from a specified collection,
+and processes it into a format suitable for training machine learning models.   """
+
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 

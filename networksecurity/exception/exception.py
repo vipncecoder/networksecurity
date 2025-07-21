@@ -1,3 +1,6 @@
+"""This module defines a custom exception class for network security errors.
+It inherits from the built-in Exception class and provides additional context"""
+
 import sys
 from networksecurity.logging import logger
 

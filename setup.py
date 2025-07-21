@@ -1,3 +1,7 @@
+# setup.py
+# This script is used to set up the package and install the required dependencies.
+
+
 from setuptools import setup, find_packages
 from typing import List
 def get_requirements()->List[str]:

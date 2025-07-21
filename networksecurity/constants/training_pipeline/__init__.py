@@ -1,3 +1,7 @@
+# networksecurity/constants/training_pipeline/__init__.py
+"""This module defines constants for the training pipeline of the Network Security project.
+It includes constants for data ingestion, feature store, and other related configurations."""
+
 import os 
 import sys
 import numpy as np

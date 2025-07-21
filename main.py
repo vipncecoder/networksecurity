@@ -1,3 +1,6 @@
+# main.py
+# This script is used to initiate the data ingestion process for the network security project.
+
 from networksecurity.components.data_ingestion import DataIngestion
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging

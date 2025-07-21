@@ -1,3 +1,6 @@
+"""This module defines configuration entities for the training pipeline and data ingestion process.
+It includes classes for training pipeline configuration and data ingestion configuration."""
+
 from datetime import datetime
 import os
 from networksecurity.constants import training_pipeline

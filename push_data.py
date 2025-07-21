@@ -1,3 +1,7 @@
+"""This script is used to extract network data from a CSV file and insert it into a MongoDB database.
+It reads the CSV file, converts it to JSON format, and then inserts the records into the specified MongoDB collection."""
+
+
 import os
 import sys
 import json 
