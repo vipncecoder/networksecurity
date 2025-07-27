@@ -25,7 +25,11 @@ from sklearn.ensemble import (
     RandomForestClassifier,
 )
 import mlflow
-from urllib.parse import urlparse
+# # from urllib.parse import urlparse
+# import dagshub
+# dagshub.init(repo_owner='vipnceme34', repo_name='networksecurity', mlflow=True)
+
+
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
@@ -59,6 +63,20 @@ class ModelTrainer:
             #     mlflow.sklearn.log_model(best_model, "model", registered_model_name=best_model)
             # else:
             #     mlflow.sklearn.log_model(best_model, "model")   
+
+    # def track_mlflow(self, best_model, train_metrics):
+    #  import mlflow
+    #  import mlflow.sklearn
+    #  from dataclasses import asdict
+    #  with mlflow.start_run():
+    #     for key, value in asdict(train_metrics).items():
+    #         mlflow.log_metric(key, value)
+
+    #     # Just log the model artifact — DO NOT trigger registry
+    #     mlflow.sklearn.log_model(
+    #         sk_model=best_model,
+    #         artifact_path="model"  # DO NOT add registered_model_name here
+    #     )
         
     def train_model(self,X_train,y_train,x_test,y_test):
         models = {
