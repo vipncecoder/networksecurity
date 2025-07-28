@@ -16,7 +16,8 @@ class TrainingPipelineConfig:
         self.pipeline_name = training_pipeline.PIPELINE_NAME
         self.artifact_name = training_pipeline.ARTIFACT_DIR
         self.artifact_dir = os.path.join(self.artifact_name, timestamp)
-        self.timestam:str = timestamp
+        self.model_dir=os.path.join("final_model")
+        self.timestamp:str = timestamp
 
 """This class holds the configuration for the training pipeline, including the pipeline name, artifact directory, and timestamp.
 this class is used to create a unique directory for each run of the pipeline based on the current timestamp.

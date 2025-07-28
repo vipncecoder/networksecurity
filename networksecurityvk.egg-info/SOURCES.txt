@@ -2,6 +2,7 @@ README.md
 setup.py
 networksecurity/__init__.py
 networksecurity/cloud/__init__.py
+networksecurity/cloud/s3_syncer.py
 networksecurity/components/__init__.py
 networksecurity/components/data_ingestion.py
 networksecurity/components/data_transformation.py
