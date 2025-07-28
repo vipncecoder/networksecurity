@@ -5,6 +5,10 @@ to create conda environment - conda create --name myenv python=3.9
 to activate conda env   - conda activate venv/ 
 use -- mlflow ui - for mlflow view
 
+pip install --upgrade pymongo
+
+uvicorn app:app --reload -- to run fastapi file
+
 1. make all the required directory
 -Network_Data
 -networksecurity
