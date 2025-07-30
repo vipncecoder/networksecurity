@@ -30,3 +30,15 @@ uvicorn app:app --reload -- to run fastapi file
    pipeline
    utils
 -notebooks   
+
+
+make repository in ECR
+
+
+setup github secrets:
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=us-east-1
+AWS_ECR_LOGIN_URI=107548170487.dkr.ecr.us-east-1.amazonaws.com/networksecurityvk
+ECR_REPOSITORY_NAME=simple-app
