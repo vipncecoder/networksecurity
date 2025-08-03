@@ -1,7 +1,8 @@
 """This module sets up logging for the network security application.
 It configures the logging format and file path for storing logs."""
 
-import logging
+import logging 
+"""import logging module to handle logging in the application."""
 import os
 from datetime import datetime
 
